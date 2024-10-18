@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Check if the input matches the stored data
     if (username == storedUsername && redgno == storedRedgno && storedEmail==email ) {
-        alert('Login successful click the ok button for further services');
+        // alert('Login successful click the ok button for further services');
         let a = document.createElement("a");
         a.href = "Faculty.html";
         a.target = "_blank";
