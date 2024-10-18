@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+  body{
+    background-image: url("https://enterprisersproject.com/sites/default/files/styles/large/public/images/cio-virtual-learning.png?itok=gvG4gcsQ");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.whatsapp_float {
+	position:fixed;
+	width:80px;
+	height:80px;
+	top:160px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50%;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:25px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+.meet{
+  text-decoration: none;
+}
+.btn{
+  height: 60px;
+  width: 150px;
+  font-size: 20px;
+  background-color: rgb(0, 238, 255);
+  border-radius: 40px
+}
+.videocall{
+  width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: white;  
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.chat{
+  width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    color: white;  
+    border-radius: 10px;
+    padding: 30px 40px;
+    height: 200px;
+    margin-top: 20px;
+
+}
+
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Chat</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="videocall">
+
+  <h1>Video Call</h1>
+  <p>Click on the button below to join video call in google classroom</p>
+  <button class="btn">
+  <a  class="meet" href="https://meet.google.com/nes-avzj-cfe">meeting</a></button>
+  <!-- <button class="btn">
+  <a  class="meet" href="https://meet.google.com/landing?hs=197&authuser=0">Video call</a></button> -->
+  <br>
+</div>
+<div class="chat">
+
+<h1>Whatsapp</h1>
+<p>Use Whatsapp to directly chat with the mentor</p>
+<a href="https://wa.me/919692469181" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+</div>
+
+
+
+
+</body>
+</html>
