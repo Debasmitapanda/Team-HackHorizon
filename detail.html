@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+
+<body>
+    <h1>MENTOR INFORMATION</h1>
+    <div class="div">
+        <div class="img">
+            <img src="teacher1img.jpg" alt="">
+        </div>
+        <h3>Dr. Birmohan Singh</h3>
+        <div class="info">
+            <ul>
+                <li>
+                    Department : Computer Science
+
+                </li>
+                <li>Educational Qualification : Ph.D., M.E.</li>
+                <li>Phone (O) : +91-1672-253208</li>
+                <li>E-mail : birmohansingh@sliet.ac.in , birmohans@gmail.com</li>
+            </ul>
+        </div>
+        <h3 class="slot">Slot Details</h3>
+        <div class="slots">
+            <button class="btn" date-time="4 pm">
+                4pm-5pm</button>
+            <button class="btn" date-time="7 pm">
+                7pm-8pm</button>
+        </div>
+        
+
+    </div>
+    <button class="remainder">
+        <a href="set3.html" target="_blank">SET REMINDER</a>
+
+    </button>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const slots = document.querySelectorAll('.btn');
+            slots.forEach(slot => {
+                if (localStorage.getItem(slot.getAttribute('date-time')) === "booked") {
+                    slot.classList.add("booked");
+                    slot.disabled = true;
+                }
+            });
+            slots.forEach(slot => {
+                slot.addEventListener('click', () => {
+                    if (slot.classList.contains('booked')) {
+                        alert("This slot is already booked");
+                        return;
+                    }
+                    let confirmBooking = confirm(`Confirm booking ${slot.getAttribute('date-time')} slot`);
+                    if (confirmBooking) {
+                        slot.classList.add('booked');
+                        slot.disabled = true;
+                        updateFacultySchedule(slot.getAttribute('date-time'));
+                    }
+                });
+            });
+        });
+
+        function updateFacultySchedule(time) {
+            localStorage.setItem(time, "booked");
+        }
+    </script>
+
+</body>
+
+</html>
