@@ -1,16 +1,18 @@
 body{
-    background-color: bisque;
+    background-image: url(images/Teacher_background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
     text-align: center;
     text-decoration: underline;
 }
 .div{
-    width:60vw;
-    border:2px solid black;
-    min-height:50vh;
+    width:50vw;
+    border:3px solid black;
+    min-height:70vh;
     margin:50px auto;
-
+   background-color: white;
 }
 .img{
     display:flex;
