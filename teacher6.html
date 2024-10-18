@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teacher1.css">
+</head>
+
+<body>
+    <h2>Your Profile</h2>
+    <div class="content">
+        <div class="div">
+            <div class="img">
+                <img src="images/teacher6img.jpg" alt="">
+            </div>
+            <h3>Dr. Amar Nath</h3>
+            <div class="info">
+                <ul>
+                    <li>
+                        Department : Computer Science and Engineering
+
+                    </li>
+                    <li>Educational Qualification :Ph.D. in CSE from IIT Roorkee, Sept. 2020.
+
+                        Thesis ‘A Distributed Approach for Collaborative Task Execution in Dynamic Environment‘
+                        
+                         
+                        
+                        M. Tech. in CSE from NIT Rourkela, June 2014.
+                        
+                         
+                        
+                        B. Tech. in CSE from  BIET Jhansi,  June 2006.</li>
+                    <li>Phone (O) :	01672-253610</li>
+                    <li>E-mail : amarnath@sliet.ac.in</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <h3 class="book">Slot Bookings</h3>
+
+
+
+        <div class="data" id="scheduled-list">
+
+        </div>
+
+       
+    </div>
+    <div class="reminders">
+        <a href="set3.html" target="_blank">Add Reminders</a>
+    </div>
+    <script>
+        
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const scheduleList = document.getElementById("scheduled-list");
+            function updateSchedule() {
+                scheduleList.innerHTML = '';
+                const bookedSlots = Object.keys(localStorage).filter(key => !key.includes("IsThisFirstTime_Log_From_LiveServer"));
+                if (bookedSlots.length > 0) {
+                    bookedSlots.forEach(slotTime => {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = `Booked Slot: ${slotTime}`;
+                        scheduleList.appendChild(listItem);
+                    });
+                }
+                else {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = "No Appointments";
+                    scheduleList.appendChild(listItem);
+                }
+            }
+            updateSchedule();
+            setInterval(updateSchedule, 1000);
+        });
+        
+
+    </script>
+
+
+</body>
+
+</html>
