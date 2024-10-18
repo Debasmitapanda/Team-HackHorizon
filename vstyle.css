@@ -1,0 +1,96 @@
+body{
+  background-color: rgb(93, 90, 146);
+}
+.navbar{
+  display:flex;
+  flex-direction: row;
+}
+h3{
+  display: flex;
+  width:95%;
+  height:50px;
+  border:2px solid red;
+  margin:0px -6px 43px 40px;
+  color:yellow;
+  background-color: black;
+  border-radius: 12px;
+  
+  padding-top: 22px;
+  padding-left: 22px;
+}
+
+.navbar .video1{
+  border: 2px solid black;
+  width:120px;
+  height:97px;
+  margin: 0px 20px;
+  border-radius: 43px;
+  text-align: center;
+  box-shadow: 3px 3px blue;
+  background-color: white;
+}
+.ourvideo{
+  /* border:2px solid black; */
+  width:120px;
+  height:97px;
+  margin:0px 20px;
+  border-radius: 43px;
+  /* text-align: center; */
+  margin: 0px 0px;
+}
+.video{
+  width:674px;
+  height: 518px;
+  margin: -15px auto;
+}
+.section1 #remoteVideo{
+  border:2px solid black;
+  margin:auto;
+  box-shadow:3px 3px blue;
+  width:672px;
+  height:490px;
+  background-color: aliceblue;
+}
+.section1 #remoteVideo img{
+  margin:auto;
+}
+.btn{
+  display:flex;
+  flex-direction: row;
+  text-align:center;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin:12px 12px;
+}
+.btn input, button{
+  margin:12px;
+}
+.btn input{
+  width:286px;
+  height:28px;
+  border-radius: 8px;
+  border: 2px solid black;
+  color:black;
+}
+.btn button{
+  width:95px;
+  height: 28px;
+  border-radius:12px;
+  background-color:black;
+  color:yellow;
+  cursor:pointer;
+}
+.btn button:hover{
+  width:100px;
+  height:30px;
+  border-radius:12px;
+  background-color: rgb(110,106,106);
+  color:rgb(27, 27, 19);
+}
+footer{
+  background-color: black;
+  height: 22px;
+  color:white;
+  padding:12px;
+  text-align: center;
+}

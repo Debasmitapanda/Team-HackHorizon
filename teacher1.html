@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teacher1.css">
+</head>
+
+<body>
+    <h2>Your Profile</h2>
+    <div class="content">
+        <div class="div">
+            <div class="img">
+                <img src="images/teacher1img.jpg" alt="">
+            </div>
+            <h3>Dr. Birmohan Singh</h3>
+            <div class="info">
+                <ul>
+                    <li>
+                        Department : Computer Science
+
+                    </li>
+                    <li>Educational Qualification : Ph.D., M.E.</li>
+                    <li>Phone (O) : +91-1672-253208</li>
+                    <li>E-mail : birmohansingh@sliet.ac.in , birmohans@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <h3 class="book">Slot Bookings</h3>
+
+
+
+        <div class="data" id="scheduled-list">
+
+        </div>
+
+       
+    </div>
+    <div class="reminders">
+        <a href="set3.html" target="_blank">Add Reminders</a>
+    </div>
+    <script>
+        
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const scheduleList = document.getElementById("scheduled-list");
+            function updateSchedule() {
+                scheduleList.innerHTML = '';
+                const bookedSlots = Object.keys(localStorage).filter(key => !key.includes("IsThisFirstTime_Log_From_LiveServer"));
+                if (bookedSlots.length > 0) {
+                    bookedSlots.forEach(slotTime => {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = `Booked Slot: ${slotTime}`;
+                        scheduleList.appendChild(listItem);
+                    });
+                }
+                else {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = "No Appointments";
+                    scheduleList.appendChild(listItem);
+                }
+            }
+            updateSchedule();
+            setInterval(updateSchedule, 1000);
+        });
+        
+
+    </script>
+
+
+</body>
+
+</html>
