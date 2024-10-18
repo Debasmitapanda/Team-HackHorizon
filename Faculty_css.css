@@ -104,3 +104,7 @@ h3{
     background-color: #F0A8D0;
     border-radius: 50px;
 }
+.booking a{
+    text-decoration: none;
+    color:black;
+}
