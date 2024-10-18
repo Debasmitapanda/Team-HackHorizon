@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(14, 99, 99);
+}
 h2 {
     text-align: center;
 
@@ -7,6 +10,7 @@ h2 {
     width: 60vw;
     border: 2px solid black;
     margin: 40px auto;
+    background-color: azure;
 }
 
 .img {
