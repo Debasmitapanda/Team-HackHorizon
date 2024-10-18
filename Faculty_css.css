@@ -93,3 +93,14 @@ h3{
     display: flex;
     flex-direction: column;
 }
+.booking{
+    margin-top: 10px;
+    border: 1px;
+}
+.booking:hover{
+    background-color: #EECAD5;
+}
+.booking:active{
+    background-color: #F0A8D0;
+    border-radius: 50px;
+}
