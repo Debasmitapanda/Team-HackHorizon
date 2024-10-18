@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15%;
+            background-image: url(images/background_one.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #container{
+            border: 2px solid black;
+            height: 350px;
+            width: 300px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           background-image: url(images/photo_one.jpg);
+        }
+        button{
+           height: 50px;
+           width: 150px; 
+           position: fixed;
+           bottom: 0%;
+           right: 0%;
+           box-shadow: 5px 1px 5px 7px grey;
+           margin-left: 60px;
+           background-color:goldenrod ;
+           font-size: 20px;
+           padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Faculty_name" placeholder="Enter your name" required>
+        </div>
+            <br>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="" placeholder="Enter your email id" required>
+            </div>
+            <br>
+        </form>
+        <button>Continue </button>
+    </div>
+</body>
+</html>
