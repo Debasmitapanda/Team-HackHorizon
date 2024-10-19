@@ -1,7 +1,8 @@
 body{margin: 0;
-background-image: url("abstract-luxury-glowing-lines-curved-overlapping-on-dark-blue-background-template-premium-award-design-free-vector.jpg");
+ background-image: url("images/abstract-luxury-glowing-lines-curved-overlapping-on-dark-blue-background-template-premium-award-design-free-vector.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+ font-size: 2rem; 
 }
 img{width: 100px;
 height: 100px;}
@@ -27,6 +28,7 @@ margin:5px;}
 h1{
     color: rgba(3, 3, 57, 0.763);
     text-align: center;
+    font-size: 2.5rem;
 }
 h3{
     color: rgb(49, 38, 38);
@@ -146,4 +148,9 @@ h3{
 .booking2  a{
     text-decoration: none;
     color:black;
+}
+@media(max-width:768px){
+    h1{
+   font-size: 2rem;
+    }
 }
