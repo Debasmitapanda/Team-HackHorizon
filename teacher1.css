@@ -118,3 +118,97 @@ li {
     transform: scale(1.12);
     transition: transform 0.3s ease-in-out;
 }
+
+
+/* Styles for tablets and smaller devices */
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90vw;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    .reminders, .videocall {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .bttn {
+        margin-left: 0;
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 80%;
+        border: 3px solid black;
+    }
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: rgb(14, 99, 99);
+        padding: 0 10px;
+    }
+
+    .content {
+        width: 100vw;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .img img {
+        width: 70%;
+        border: 2px solid black;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    .reminders, .videocall {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .bttn {
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .videocall {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px 10px;
+    }
+
+    .book {
+        font-size: 18px;
+    }
+
+    .line {
+        border: 1px solid red;
+    }
+}
