@@ -210,5 +210,15 @@ li{
         height: 40px; /* Adjust height */
     }
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+}
 
+@media (min-width: 769px) {
+    body {
+        font-size: 16px; /* Larger font for desktops */
+    }
+}
 
