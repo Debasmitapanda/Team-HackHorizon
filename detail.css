@@ -104,3 +104,111 @@ li{
 
 }
 
+
+
+/* For Tablets (widths up to 768px) */
+@media only screen and (max-width: 768px) {
+    .div {
+        width: 90vw; /* Increase width for smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce font size of heading */
+    }
+
+    .img img {
+        width: 150px; /* Resize image for tablets */
+        height: auto;
+    }
+
+    .btn {
+        height: 12vw; /* Increase button size */
+        width: 12vw;
+        font-size: 14px; /* Adjust font size */
+        margin-left: 15px; /* Adjust margin */
+    }
+
+    .remainder, .join {
+        width: 90%; /* Make buttons take more width */
+        font-size: 18px; /* Adjust button text size */
+        height: 50px; /* Adjust button height */
+    }
+
+    .join {
+        margin-left: 0; /* Center-align on tablets */
+    }
+}
+
+/* For Mobile Devices (widths up to 480px) */
+@media only screen and (max-width: 480px) {
+    .div {
+        width: 95vw; /* Full width on small screens */
+        margin: 20px auto; /* Reduce margins */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce heading size for small screens */
+    }
+
+    .img img {
+        width: 100px; /* Smaller image size */
+        height: auto;
+    }
+
+    ul li {
+        font-size: 14px; /* Adjust list font size */
+    }
+
+    .btn {
+        height: 18vw; /* Increase button size for small screens */
+        width: 18vw;
+        font-size: 12px; /* Reduce button text size */
+        margin-left: 10px; /* Decrease button margin */
+    }
+
+    .remainder, .join {
+        width: 100%; /* Full width for buttons */
+        font-size: 16px; /* Smaller button text size */
+        height: 45px; /* Adjust height for small screens */
+    }
+
+    .join {
+        margin-left: 0; /* Center-align button */
+    }
+}
+
+/* Extra Small Devices (widths up to 320px) */
+@media only screen and (max-width: 320px) {
+    .div {
+        width: 98vw; /* Almost full width */
+        margin: 10px auto; /* Adjust margin */
+    }
+
+    h1 {
+        font-size: 18px; /* Reduce heading font size */
+    }
+
+    .img img {
+        width: 80px; /* Smaller image for very small screens */
+        height: auto;
+    }
+
+    ul li {
+        font-size: 12px; /* Smaller text */
+    }
+
+    .btn {
+        height: 20vw; /* Adjust button size */
+        width: 20vw;
+        font-size: 10px; /* Further reduce button text */
+        margin-left: 5px; /* Narrow the gap between buttons */
+    }
+
+    .remainder, .join {
+        width: 100%; /* Full width */
+        font-size: 14px; /* Smaller button font size */
+        height: 40px; /* Adjust height */
+    }
+}
+
+
