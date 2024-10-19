@@ -65,10 +65,10 @@ li {
 
 .reminders {
     margin: 20px auto;
-    width: 70%;
+    width: 60%;
     font-size: 20px;
     border-radius: 18px;
-    height: 34px;
+    height: 36px;
     background-color: orangered;
     color: white;
     margin-bottom: 20px;
@@ -110,4 +110,11 @@ li {
     padding: 30px 40px;
     margin-left: 500px;
     /* font-size:20px; */
+}
+.reminders:hover{
+    background-color: goldenrod;
+    
+    cursor:pointer;
+    transform: scale(1.12);
+    transition: transform 0.3s ease-in-out;
 }

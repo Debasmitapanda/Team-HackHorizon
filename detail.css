@@ -82,3 +82,24 @@ li{
     text-decoration: none;
     color:white;
 }
+.remainder:hover{
+    background-color: goldenrod;
+    
+    cursor:pointer;
+    transform: scale(1.12);
+    transition: transform 0.3s ease-in-out;
+
+}
+.join{
+    background-color: rgb(235, 115, 28);
+
+}
+.join:hover{
+    background-color: rgb(241, 193, 22);
+    cursor:pointer;
+    transform: scale(1.12);
+    transition: transform 0.3s ease-in-out;
+
+
+
+}
