@@ -94,8 +94,25 @@ h3{
     flex-direction: column;
 }
 .booking{
-    margin-top: 10px;
     border: 1px;
+    height: 20px;
+    margin-top: 70px;
+    margin-right: 5px;
+    box-shadow: 0px 3px 3px 2px black;
+}
+.booking1 {
+    border: 1px;
+    height: 20px;
+    margin-top: 120px;
+    margin-right: 5px;box-shadow: 0px 3px 3px 2px black;
+
+}
+.booking2 {
+    border: 1px;
+    height: 20px;
+    margin-top: 80px;
+    margin-right: 5px;
+    box-shadow: 0px 3px 3px 2px black;
 }
 .booking:hover{
     background-color: #EECAD5;
@@ -104,7 +121,29 @@ h3{
     background-color: #F0A8D0;
     border-radius: 50px;
 }
-.booking a{
+.booking1:hover{
+    background-color: #EECAD5;
+}
+.booking1:active{
+    background-color: #F0A8D0;
+    border-radius: 50px;
+}
+.booking2:hover{
+    background-color: #EECAD5;
+}
+.booking2:active{
+    background-color: #F0A8D0;
+    border-radius: 50px;
+}
+.booking  a{
+    text-decoration: none;
+    color:black;
+}
+.booking1  a{
+    text-decoration: none;
+    color:black;
+}
+.booking2  a{
     text-decoration: none;
     color:black;
 }
