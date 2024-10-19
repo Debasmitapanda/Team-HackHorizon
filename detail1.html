@@ -69,6 +69,8 @@
                         slot.classList.add('booked');
                         slot.disabled = true;
                         updateFacultySchedule(slot.getAttribute('date-time'));
+                        //Redirect to remainder app with the selected time
+                        window.location.href = `set3.html?time=${encodeURIComponent(slot.getAttribute('date-time'))}`;
                     }
                 });
             });
