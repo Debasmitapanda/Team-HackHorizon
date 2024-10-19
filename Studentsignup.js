@@ -21,3 +21,7 @@ document.getElementById('Signup').addEventListener('submit', function(event) {
     // Optionally, you could clear the form after saving the data
     document.getElementById('Signup').reset();
 });
+
+document.getElementById("loginBtn").addEventListener("click", function() {
+    window.location.href = "Studentlogin.html"; // Redirect to login page
+});
