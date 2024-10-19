@@ -52,26 +52,36 @@
 .videocall{
   width: 420px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid black;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
-    color: white;  
+    color:black;  
+    
     border-radius: 10px;
     padding: 30px 40px;
+    margin-left: 500px;
+}
+.videocall p{
+  font-size: 20px;
 }
 .chat{
   width: 420px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid black;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.2);
-    color: white;  
+    color:black;  
     border-radius: 10px;
     padding: 30px 40px;
     height: 200px;
     margin-top: 20px;
+    margin-left: 500px;
+  }
+  .chat p{
+    font-size: 20px;
+  }
 
-}
+
 
 </style>
 <meta charset="UTF-8">
@@ -84,7 +94,7 @@
   <div class="videocall">
 
   <h1>Video Call</h1>
-  <p>Click on the button below to join video call in google classroom</p>
+  <p class="p">Click on the button below to join video call in google classroom</p>
   <button class="btn">
   <a  class="meet" href="https://meet.google.com/ntk-daxy-uka">meeting</a></button>
   <!-- <button class="btn">
@@ -94,7 +104,7 @@
 <div class="chat">
 
 <h1>Whatsapp</h1>
-<p>Use Whatsapp to directly chat with the mentor</p>
+<p class="c">Use Whatsapp to directly chat with the mentor</p>
 <a href="https://wa.me/911672-253208" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 </div>
