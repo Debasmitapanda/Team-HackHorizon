@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+
+<body>
+    <h1>MENTOR INFORMATION</h1>
+    <div class="div">
+        <div class="img">
+            <img src="images/teacher10img.jpg" alt="">
+        </div>
+        <h3>Dr. Tajinder Singh</h3>
+        <div class="info">
+            <ul>
+                <li>
+                    Department : Computer Science and Engineering
+
+                </li>
+                <li>Educational Qualification : Ph.D entitled “Machine Learning Based Text Mining in Social Media”
+                    from National Institute of Technology, Hamirpur, India</li>
+                <li>Phone (O) : +91-6283963279</li>
+                <li>E-mail :
+                    tajindersingh@sliet.ac.in.</li>
+            </ul>
+        </div>
+        <h3 class="slot">Slot Details</h3>
+        <div class="slots">
+            <button class="btn" date-time="10 am">
+                10am-10:40am</button>
+            <button class="btn" date-time="10:40 am">
+                10:40am-11:20am</button>
+             <button class="btn" date-time="11:20 am">
+                11:20am-12pm</button>
+            <button class="btn" date-time= "4 pm">
+                4pm-4:40pm</button>
+            <button class="btn" date-time="4:40 pm">
+                4:40pm-5:20pm</button>
+            <button class="btn" date-time="5:20 pm">
+                5:20pm-6pm</button>
+        </div>
+        
+
+    </div>
+    <button class="remainder">
+        <a href="set3.html" target="_blank">SET REMINDER</a>
+
+    </button>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const slots = document.querySelectorAll('.btn');
+            slots.forEach(slot => {
+                if (localStorage.getItem(slot.getAttribute('date-time')) === "booked") {
+                    slot.classList.add("booked");
+                    slot.disabled = true;
+                }
+            });
+            slots.forEach(slot => {
+                slot.addEventListener('click', () => {
+                    if (slot.classList.contains('booked')) {
+                        alert("This slot is already booked");
+                        return;
+                    }
+                    let confirmBooking = confirm(`Confirm booking ${slot.getAttribute('date-time')} slot`);
+                    if (confirmBooking) {
+                        slot.classList.add('booked');
+                        slot.disabled = true;
+                        updateFacultySchedule(slot.getAttribute('date-time'));
+                    }
+                });
+            });
+        });
+
+        function updateFacultySchedule(time) {
+            localStorage.setItem(time, "booked");
+        }
+    </script>
+
+</body>
+
+</html>
